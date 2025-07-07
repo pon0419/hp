@@ -1,0 +1,170 @@
+.menu_items{
+    position: relative;
+    margin-bottom: 20vh;
+}
+
+.flower1{
+    position: absolute;
+    left: 20vw;
+    opacity: 0.3;
+}
+
+.flower2{
+    position: absolute;
+    right: 5vw;
+    bottom: 10vh;
+    opacity: 0.3;
+}
+
+
+.menu-box{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 150px;
+}
+
+.menupage-item{
+    position: absolute;
+    left: 35%;
+    top:0;
+    z-index: -10;
+}
+
+.bakedpage h2{
+    margin-bottom: 3em;
+}
+
+.menu-box > img{
+    max-width: 50%;
+    object-fit: contain;
+    height: auto;
+}
+
+.menupage-item{
+    text-align: center;
+    font-size: 1em;
+    max-width: 50%;
+    height: auto;
+}
+
+.menupage-title span{ 
+    font-size: 1.5em;
+}
+
+.menupage-title{
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.menupage-textarea{
+    width: 100%;
+    height:auto;
+    position: relative;
+}
+
+.menupage-textarea img{
+    width:100%;
+    height:auto;
+    transform: rotate(90deg);
+}
+
+.menupage-textarea p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:1em;
+}
+
+@media(max-width:786px){
+
+    .flower1{
+        left: 5vw;
+        width: 20vw;
+        top: 70vh;
+    }
+
+    .flower2{
+        right: 5vw;
+        bottom: 5vh;
+        width: 20vw;
+    }
+
+    .menu-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .menupage-item img{
+        display: none;
+    }
+
+    .menu-box > img{
+        max-width: 80%; /* 画像のサイズを調整 */
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px; /* 画像の上部にスペース */
+    }
+
+    .menupage-item{
+        position: static; /* 絶対位置指定を解除 */
+        min-width: 80vw; /* テキストブロックの幅を調整 */
+        font-size: 0.9em; /* フォントサイズを調整 */
+        width: 100%; /* 親要素の幅いっぱいに広げる */
+        display: block; /* Flexboxを解除して通常のブロック要素に */
+        text-align: center; /* テキストを中央寄せ */
+    }
+    .menupage-title{
+        margin-top: 1em; /* マージンを調整 */
+        margin-bottom: 1em; /* マージンを調整 */
+        font-size: 1.2em; /* フォントサイズを調整 */
+    }
+
+    .menupage-title span{
+        font-size: 1.8em; /* スマートフォンでの名前のフォントサイズ */
+    }
+
+    .menupage-title p {
+        font-size: 1.2em; /* スマートフォンでの価格のフォントサイズ */
+    }
+
+    .menupage-textarea{
+        width: 100%;
+        padding: 15px; /* スマートフォンでのパディングを調整 */
+        min-height: 120px; /* 最小高さを設定して見た目を整える */
+        display: flex; /* テキストを中央に配置するためにFlexboxを使用 */
+        align-items: center; /* 垂直方向の中央揃え */
+        justify-content: center; /* 水平方向の中央揃え */
+    }
+
+    .menupage-textarea img{
+        display: none; /* スマートフォンでは画像を非表示 */
+    }
+
+    .menupage-textarea p{
+        position: static; /* 絶対位置指定を解除 */
+        transform: none; /* transformを解除 */
+        font-size: 1em; /* スマートフォンでのフォントサイズ */
+        text-align: center; /* テキストを中央寄せ */
+        width: 100%; /* 親要素の幅いっぱいに広げる */
+        padding: 0; /* 不要なパディングを削除 */
+        margin: 0;
+    }
+
+}
+
+/* モーニングページ */
+
+.morning-drink{
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.morning-drink span{
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 1px dashed #361500;
+    margin-bottom: 1em;
+}

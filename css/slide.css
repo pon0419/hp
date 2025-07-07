@@ -1,0 +1,105 @@
+/* Owl Carousel関連のカスタムCSS */
+.menu .container {
+    padding-top: 50px; /* セクションタイトルとスライダーの間にスペースを確保 */
+    padding-bottom: 50px;
+}
+
+#menu-carousel .item {
+    text-align: center;
+    opacity: .5; /* 非アクティブなアイテムを少し薄くする */
+    -webkit-transform: scale3d(0.9, 0.9, 1); /* 非アクティブなアイテムを少し縮小 */
+    transform: scale3d(0.9, 0.9, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 28px; /*角丸 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    /* filter: drop-shadow(5px 5px 5px #361); */
+}
+
+#menu-carousel .owl-item.active.center .item {
+    opacity: 1; /* 中央のアイテムは透明度100% */
+    -webkit-transform: scale3d(1.0, 1.0, 1); /* 中央のアイテムは元のサイズ */
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.menu-item-content img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 5px; 画像の角丸 */
+    margin-bottom: 15px;
+    object-fit: cover; /* 画像がコンテナに収まるように */
+    aspect-ratio: 4/3; /* 画像のアスペクト比を固定（例: 4:3） */
+}
+
+.menu-description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #361500;
+    line-height: 1.5;
+}
+
+/* ドットナビゲーションのスタイル調整 */
+#menu-carousel.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px; /* ドットとスライダーの間の余白 */
+}
+
+#menu-carousel.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px; /* ドット間の余白 */
+}
+
+#menu-carousel.owl-carousel .owl-dots .owl-dot span {
+    width: 10px; /* ドットのサイズ */
+    height: 10px;
+    margin: 0;
+    background: #ecca41; /* ドットの通常時の色 */
+    border-radius: 50%;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+#menu-carousel.owl-carousel .owl-dots .owl-dot.active span,
+#menu-carousel.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #d89323; /* アクティブ時とホバー時のドットの色 */
+    transform: scale(1.2); /* アクティブ時とホバー時に少し大きく */
+}
+
+/* 矢印ナビゲーション（必要な場合） */
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(236, 202, 65, 0.7) !important; /* あなたのブランドカラーに合わせる */
+    color: #fff !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.owl-nav button:hover {
+    opacity: 1;
+}
+
+.owl-prev {
+    left: -20px; /* 左矢印の位置調整 */
+}
+
+.owl-next {
+    right: -20px; /* 右矢印の位置調整 */
+}
+
+/* .owl-prev:before, .owl-next:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f104'; // 左矢印のアイコン（Font Awesomeの例）
+}
+.owl-next:before {
+    content: '\f105'; // 右矢印のアイコン（Font Awesomeの例）
+} */

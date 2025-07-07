@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Shippori+Mincho&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>堀養蜂園　蜜や</title>
+    
+</head>
+<script>
+    const img_src = ["img/fv_photo1.png", "img/fv_photo2.png","img/fv_photo3.png"];
+    let num = -1;
+
+    function slide_time() {
+        if (num === 2) {
+        num = 0;
+        } else {
+        num++;
+        }
+        document.getElementById("slide_img").src = img_src[num];
+    }
+
+    setInterval(slide_time, 2500);
+</script>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="" class="fv-logo">
+    </header>
+
+        <!-- スマホ版ナビゲーション -->
+    <ul class="bottom-nav">
+            <li>
+                <a href="index.html"> <img src="img/icon_home.png" alt="">
+                    <span class="iconname">ホーム</span>
+                </a>
+            </li>
+            <li>
+                <a href="#蜜やについて"> <img src="img/icon_bee.png" alt="">
+                    <span class="iconname">蜜やについて</span>
+                </a>
+            </li>
+            <li>
+                <a href="#新着情報"> <img src="img/icon_info.png" alt="">
+                    <span class="iconname">新着情報</span>
+                </a>
+            </li>
+            <li>
+                <a href="menu.html"> <img src="img/icon_menu.png" alt="">
+                    <span class="iconname">メニュー</span>
+                </a>
+            </li>
+    </ul>
+
+    
+    <section class="firstview"> 
+        <!-- ↑を親要素としてleafを配置する -->
+        <img src="img/leaf1.png" alt=""  class="leaf1">
+        <img src="img/leaf2.png" alt="" class="leaf2">
+        <img src="img/leaf3.png" alt="" class="leaf3">
+        <div class="container">
+            <div class="fv-content">
+                <div class="catch-copy">
+                    <h1>堀養蜂園の<br><span>はちみつ</span><br>を、届けたい。</h1>
+                    <img src="img/flower1.png" alt="" class="catch-copy-flower">
+                </div>
+                <ul class="side-nav">
+                    <li class="li-menu">
+                        <a href="menu.html" class="link-hover-animation">メニュー</a>
+                        <img src="img/ecca41_hex_100.png" alt="">
+                        <div>
+                            <img src="img/gold_hex_150.png" alt="">
+                        </div>
+                    </li>
+                    <li class="li-about">
+                        <a href="#蜜やについて" class="link-hover-animation">蜜やについて</a>
+                        <img src="img/ecca41_hex_100.png" alt="">
+                    </li>
+                    <li class="li-topic">
+                        <a href="#新着情報" class="link-hover-animation">新着情報</a>
+                        <img src="img/ecca41_hex_100.png" alt=""></li>
+                    <li class="li-shop">
+                        <a href="#店舗情報" class="link-hover-animation">店舗情報</a>
+                        <img src="img/ecca41_hex_100.png" alt="">
+                        <div>
+                            <img src="img/gold_hex_150.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <img src="img/fv_photo1.png" alt="" id="slide_img" class="fv-photo-img">
+            <img src="img/fv-photo-text.png" alt="" class="fv-photo-text">
+            <img src="img/flower2.png" alt="" class="fv-photo-flower">
+            
+        </div>
+        
+    </section>
+
+    <section class="menu">
+        <h2 class="section-title" id="メニュー">メニュー</h2>
+        <div class="container">
+            <!-- カルーセル -->
+            <div id="menu-carousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="menu-item-content">
+                        <img src="img/soft.jpg" alt="ソフトクリーム" class="menu-img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-item-content">
+                        <img src="img/canele.jpg" alt="はちみつドリンク" class="menu-img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-item-content">
+                        <img src="img/morning.jpg" alt="はちみつプリン" class="menu-img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-item-content">
+                        <img src="img/drink.jpg" alt="はちみつプリン" class="menu-img">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-item-content">
+                        <img src="img/pudding.jpg" alt="はちみつプリン" class="menu-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <a href="menu.html" target="_blank" rel="noopener noreferrer">詳しく見る</a>
+        </div>
+    </section>
+
+    <section class="about" >
+        <img src="img/about_top.png" alt="" class="about-top">
+        <h2 class="section-title" id="蜜やについて">蜜やについて</h2>
+        <div class="container">
+            <div class="about-group">
+                <img src="img/about1.png" alt="" class="hex-photo">
+            <div class="about-text">
+                    <div>
+                        <p>堀養蜂園のはちみつを、<br class="sm-text">あなたに届けたい。</p>
+                    </div>
+                    <p>「蜜や」は堀養蜂園こだわりのはちみつを<br class="sm-text">多くの人に食べてもらうために生まれました。</p>
+                </div>
+            </div>
+            <div class="about-group">
+                <div class="about-text">
+                    <p>堀養蜂園のはちみつは、あま〜いだけじゃない。<br class="sm-text">
+                    種類によって違った香りやコクを楽しめる、とても<br class="sm-text">奥が深いはちみつなんです。</p>
+                </div>
+                <img src="img/about2.png" alt="" class="hex-photo">
+            </div>
+            <div class="about-group">
+                <img src="img/about3.png" alt="" class="hex-photo">
+                <div class="about-text">
+                    <p>そんなこだわりのはちみつを多くの人に届けるため、<br class="sm-text">
+                    「蜜や」でははちみつを使ったこだわりのお菓子や<br class="sm-text">
+                    ドリンクを全て<span>手作り</span>で提供しています。</p>
+                    <div class="button">
+                        <a href="https://horiyouhouen.jp/" target="_blank" rel="noopener noreferrer">堀養蜂園について</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="newtopic">
+        <img src="img/newtopic_top.png" alt="" class="section-img">
+        <h2 class="section-title" id="新着情報">新着情報</h2>
+        <div class="newtopic-all">
+            <p class="newtopic-deco">NewTopic</p>
+            <div class="container">
+                <div class="news-item">
+                    <div class="content">
+                        <div class="title-wrap">
+                            <div class="info-title">
+                                <p>2025.05.30</p>
+                                <h3>ほうじ茶ソフト再開！</h3>
+                                <span>お知らせ</span>
+                            </div>
+                            <p class="discription">皆さん大変お待たせいたしました！蜜やの人気商品ほうじ茶ソフトが再開いたしました！昨年までとは異なり、今年はさっぱりとした味わいの"はぜ"の蜂蜜たっぷりおかけします！</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="news-item">
+                    <div class="content">
+                        <div class="title-wrap">
+                            <div class="info-title">
+                                <p>2025.05.30</p>
+                                <h3>ほうじ茶ソフト再開！</h3>
+                                <span>お知らせ</span>
+                            </div>
+                            <p class="discription">皆さん大変お待たせいたしました！蜜やの人気商品ほうじ茶ソフトが再開いたしました！昨年までとは異なり、今年はさっぱりとした味わいの"はぜ"の蜂蜜たっぷりおかけします！</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="news-item">
+                    <div class="content">
+                        <div class="title-wrap">
+                            <div class="info-title">
+                                <p>2025.05.30</p>
+                                <h3>ほうじ茶ソフト再開！</h3>
+                                <span>お知らせ</span>
+                            </div>
+                            <p class="discription">皆さん大変お待たせいたしました！蜜やの人気商品ほうじ茶ソフトが再開いたしました！昨年までとは異なり、今年はさっぱりとした味わいの"はぜ"の蜂蜜たっぷりおかけします！</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <p class="newtopic-deco">NewTopic</p>
+        </div>
+    </section>
+
+    <section class="shop-info">
+        <img src="img/shopinfo_top.png" alt="" class="section-img">
+        <h2 class="section-title" id="店舗情報">店舗情報</h2>
+        <div class="container">
+            <div class="shopinfo-deco">
+                <img src="img/shopinfo-deco1.png" alt="" class="shopinfo-deco1">
+                <img src="img/shopinfo-deco2.png" alt="" class="shopinfo-deco2">
+            </div>
+            <div class="info-all">
+                <div class="info-text">
+                    <div class="info-item">
+                        <span>店舗名</span>
+                        <p>堀養蜂園　蜜や</p>
+                    </div>
+                    <div class="info-item">
+                        <span>住所</span>
+                        <p>岐阜県瑞浪市穂並1丁目58番地</p>
+                    </div>
+                    <div class="info-item">
+                        <span>営業時間</span>
+                        <p>平日 9:00 ~ 17:00<br>
+                        休日 9:00 ~ 18:00</p>
+                    </div>
+                    <div class="info-item">
+                        <span>電話番号</span>
+                        <p>0562-56-2228</p>
+                    </div>
+                    <div class="info-item">
+                        <span>定休日</span>
+                        <p>水曜日・不定休</p>
+                    </div>
+                    <div class="info-item">
+                        <span>行き方</span>
+                        <p>車：瑞浪インターから約8分<br>
+                        徒歩：JR瑞浪駅から約15分
+                        </p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26028.501129953303!2d137.24221439202725!3d35.36649890432786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60034665874dae25%3A0xf1c2d8efd872a375!2z5aCA6aSK6JyC5ZySIOicnOOChA!5e0!3m2!1sja!2sjp!4v1749872750310!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="button">
+                        <a href="https://horiyouhouen.jp/" target="_blank" rel="noopener noreferrer">堀養蜂園について</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        @Horiyouhouen All Rights Reserved
+    </footer>
+</body>
+</html>
